@@ -42,8 +42,8 @@ export default function AdminDashboard() {
         });
       }
 
-      const closeDropdown = (e: any) => {
-        if (profileDropdown && !profileDropdown.contains(e.target) && profileToggle && !profileToggle.contains(e.target) ) {
+      const closeDropdown = (e: MouseEvent) => {
+        if (profileDropdown && !profileDropdown.contains(e.target as Node) && profileToggle && !profileToggle.contains(e.target as Node) ) {
           profileDropdown.classList.add('hidden');
         }
       };
